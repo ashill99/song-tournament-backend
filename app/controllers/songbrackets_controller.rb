@@ -1,0 +1,2 @@
+class SongbracketsController < ApplicationController
+end

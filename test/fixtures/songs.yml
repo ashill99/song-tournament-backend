@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  artist: MyString
+  album: MyString
+  snippet: MyString
+  artwork: MyString
+  round1winner: MyString
+  round2winner: MyString
+  round3winner: MyString
+  round4winner: MyString
+  round5winner: MyString
+  has_many: 
+  has_many: 
+  through: 
+
+two:
+  title: MyString
+  artist: MyString
+  album: MyString
+  snippet: MyString
+  artwork: MyString
+  round1winner: MyString
+  round2winner: MyString
+  round3winner: MyString
+  round4winner: MyString
+  round5winner: MyString
+  has_many: 
+  has_many: 
+  through: 
