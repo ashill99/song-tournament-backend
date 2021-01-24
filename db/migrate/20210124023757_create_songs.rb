@@ -6,11 +6,11 @@ class CreateSongs < ActiveRecord::Migration[6.0]
       t.string :album
       t.string :snippet
       t.string :artwork
-      t.column :round1winner, :boolean 
-      t.column :round2winner, :boolean 
-      t.column :round3winner, :boolean 
-      t.column :round4winner, :boolean 
-      t.column :round5winner, :boolean 
+      t.boolean :round1winner
+      t.boolean :round2winner
+      t.boolean :round3winner
+      t.boolean :round4winner
+      t.boolean :round5winner
 
       t.timestamps
     end

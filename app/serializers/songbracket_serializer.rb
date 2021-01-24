@@ -1,3 +1,3 @@
 class SongbracketSerializer < ActiveModel::Serializer
-  attributes :id, :song_id, :bracket_id, :source_id
+  attributes :id, :song_id, :bracket_id
 end

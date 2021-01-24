@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_23_170307) do
+ActiveRecord::Schema.define(version: 2021_01_24_023757) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,12 +23,10 @@ ActiveRecord::Schema.define(version: 2021_01_23_170307) do
   end
 
   create_table "songbrackets", force: :cascade do |t|
-    t.bigint "song_id"
-    t.bigint "bracket_id"
+    t.integer "song_id"
+    t.integer "bracket_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["bracket_id"], name: "index_songbrackets_on_bracket_id"
-    t.index ["song_id"], name: "index_songbrackets_on_song_id"
   end
 
   create_table "songs", force: :cascade do |t|

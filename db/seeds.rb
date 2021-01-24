@@ -18,21 +18,18 @@
         round3winner: false,
         round4winner: false,
         round5winner: false
-
     )
+end
 
     16.times do
         bracket = Bracket.create(
             name: Faker::DcComics.hero,
             category: Faker::Music.genre
         )
-
-    16.times do
-        songbracket = Songbracket.create(
-            song: song,
-            bracket: bracket
-        )
-            end
-        end
     end
+
+    4.times do
+        songbracket = Songbracket.create(song_id: Song.all.sample.id, bracket_id: Bracket.all.sample.id)
+    end
+        
 

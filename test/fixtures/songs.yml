@@ -4,28 +4,22 @@ one:
   title: MyString
   artist: MyString
   album: MyString
-  snippet: MyString
+  snippet: 
   artwork: MyString
-  round1winner: MyString
-  round2winner: MyString
-  round3winner: MyString
-  round4winner: MyString
-  round5winner: MyString
-  has_many: 
-  has_many: 
-  through: 
+  round1winner: false
+  round2winner: false
+  round3winner: false
+  round4winner: false
+  round5winner: false
 
 two:
   title: MyString
   artist: MyString
   album: MyString
-  snippet: MyString
+  snippet: 
   artwork: MyString
-  round1winner: MyString
-  round2winner: MyString
-  round3winner: MyString
-  round4winner: MyString
-  round5winner: MyString
-  has_many: 
-  has_many: 
-  through: 
+  round1winner: false
+  round2winner: false
+  round3winner: false
+  round4winner: false
+  round5winner: false
