@@ -1,4 +1,4 @@
-class SongsongbracketsController < ApplicationController
+class SongbracketsController < ApplicationController
     
        
     def show
@@ -24,6 +24,10 @@ class SongsongbracketsController < ApplicationController
         @songbracket.update(songbracket_params)
     end
     
+    def create 
+        @songbracket = Songbracket.create(songbracket_params)
+        render json: @songbracket
+    end 
     private
     
     def songbracket_params
