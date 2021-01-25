@@ -24,6 +24,11 @@ class BracketsController < ApplicationController
         @bracket.update(bracket_params)
     end
     
+    def create 
+        @bracket = Bracket.create(bracket_params)
+        render json: @bracket
+    end 
+
     private
     
     def bracket_params

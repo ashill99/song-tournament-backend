@@ -23,9 +23,14 @@ class SongsController < ApplicationController
         @song.update(song_params)
     end
 
+    def create 
+        @song = Song.create(song_params)
+        render json: @song
+    end 
+
     private
 
     def song_params
-        params.require(:song).permit(:id, :title, :artist, :album, :snippet, :artwork, :round1winner)
+        params.require(:song).permit(:id, :spotify_id, :name, :artists, :album, :image, :uri)
     end
 end

@@ -1,5 +1,5 @@
 class SongSerializer < ActiveModel::Serializer
-  attributes :id, :title, :artist, :album, :snippet, :artwork
+  attributes :id, :spotify_id, :name, :artists, :album, :image, :uri
   has_many :songbrackets
   has_many :brackets, through: :songbrackets
 end
