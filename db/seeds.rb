@@ -12,12 +12,7 @@
         artist: Faker::Music::RockBand.name,
         album: Faker::TvShows::RickAndMorty.character,
         snippet: "https://miro.medium.com/max/1400/1*IDJ4x4E-bOypnEZdA5TGHQ.gif",
-        artwork: "https://image.shutterstock.com/image-photo/black-vinyl-record-isolated-on-600w-121247890.jpg",
-        round1winner: false,
-        round2winner: false,
-        round3winner: false,
-        round4winner: false,
-        round5winner: false
+        artwork: "https://image.shutterstock.com/image-photo/black-vinyl-record-isolated-on-600w-121247890.jpg"
     )
 end
 

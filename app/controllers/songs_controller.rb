@@ -1,4 +1,5 @@
 class SongsController < ApplicationController
+    
     def show
         @song = Song.find(params[:id])
         render json: @song
@@ -25,11 +26,6 @@ class SongsController < ApplicationController
     private
 
     def song_params
-        params.require(:song).permit(:id,
-                                     :round1winner,
-                                     :round2winner,
-                                     :round3winner,
-                                     :round4winner,
-                                     :round5winner )
+        params.require(:song).permit(:id, :title, :artist, :album, :snippet, :artwork, :round1winner)
     end
 end

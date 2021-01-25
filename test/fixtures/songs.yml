@@ -4,22 +4,12 @@ one:
   title: MyString
   artist: MyString
   album: MyString
-  snippet: 
+  snippet: MyString
   artwork: MyString
-  round1winner: false
-  round2winner: false
-  round3winner: false
-  round4winner: false
-  round5winner: false
 
 two:
   title: MyString
   artist: MyString
   album: MyString
-  snippet: 
+  snippet: MyString
   artwork: MyString
-  round1winner: false
-  round2winner: false
-  round3winner: false
-  round4winner: false
-  round5winner: false
