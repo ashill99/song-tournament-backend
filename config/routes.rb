@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :songs, only: [:index, :show, :new, :create, :edit, :update]
-  resources :brackets, only: [:index, :show, :new, :create, :edit, :update]
-  resources :songbrackets, only: [:index, :show, :new, :create, :edit, :update]
+  resources :songs, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  resources :brackets, only: [:index, :show, :new, :create, :edit, :update, :destroy]
+  resources :songbrackets, only: [:index, :show, :new, :create, :edit, :update, :destroy]
 
   # get '/songs/:id', to: 'songs#index'
   # patch '/songs/:id', to: 'songs#update'

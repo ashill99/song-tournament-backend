@@ -28,6 +28,12 @@ class SongbracketsController < ApplicationController
         @songbracket = Songbracket.create(songbracket_params)
         render json: @songbracket
     end 
+
+    def destroy 
+        @songbracket = Songbracket.find(params[:id])
+        @songbracket.destroy  
+    end
+
     private
     
     def songbracket_params

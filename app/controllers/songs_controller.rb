@@ -28,6 +28,11 @@ class SongsController < ApplicationController
         render json: @song
     end 
 
+    def destroy 
+        @song = Song.find(params[:id])
+        @song.destroy  
+    end
+
     private
 
     def song_params
