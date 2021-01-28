@@ -7,6 +7,7 @@ class CreateSongs < ActiveRecord::Migration[6.0]
       t.string :spotify_id
       t.string :image
       t.string :uri
+      t.integer :votes 
 
       t.timestamps
     end

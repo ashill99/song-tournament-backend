@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2021_01_24_221133) do
     t.string "spotify_id"
     t.string "image"
     t.string "uri"
+    t.integer "votes"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
